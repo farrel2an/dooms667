@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Farrel Haikal</title>
+    <meta name="view-transition" content="same-origin">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+    </script>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo-dooms.png" alt="Dooms Logo" class="nav-logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html" class="active">about</a></li>
+            <li><a href="artwork.html">artwork</a></li>
+            <li><a href="contact.html">work with me</a></li>
+        </ul>
+        <!-- Tombol Dark Mode Toggle -->
+        <div class="theme-toggle" id="theme-toggle" style="cursor: pointer; display: flex; align-items: center; color: var(--nav-text);">
+            <!-- Ikon Bulan (Untuk mode terang) -->
+            <svg id="moon-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <!-- Ikon Matahari (Untuk mode gelap - disembunyikan awalnya) -->
+            <svg id="sun-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+        </div>
+    </nav>
+
+    <section class="about-section" style="padding-top: 40px; min-height: calc(100vh - 100px);">
+        <div class="about-container">
+            <h2 class="section-title">about</h2>
+            
+            <div class="about-content">
+                <p>
+                    Halo! Aku adalah mahasiswa <strong>Teknik Informatika</strong> dengan jiwa kreatif yang sangat lekat pada <strong>Desain Grafis</strong>. Memposisikan diri di titik temu antara logika komputasional dan estetika visual, aku percaya bahwa produk digital terbaik lahir ketika barisan kode yang efisien dibalut oleh arahan seni (<em>art direction</em>) yang kuat.
+                </p>
+                <p>
+                    Sebagai seorang <em>Creative All-Rounder</em>, kapasitasku di ranah desain grafis memungkinkanku untuk merancang identitas visual, layout, dan pengalaman pengguna (UI/UX) yang tidak hanya indah dipandang, tetapi juga intuitif. Aku tidak sekadar memikirkan bagaimana sebuah sistem bekerja di balik layar, tetapi juga memprioritaskan bagaimana interaksi pengguna saat berhadapan langsung dengan layar.
+                </p>
+                <p>
+                    Di sisi teknis dan analitis, potensiku mencakup <em>Software Development</em> dan pengolahan data. Aku memiliki kemampuan untuk membangun <em>back-end</em>, mengelola <em>database</em>, serta mengembangkan perangkat lunak menggunakan HTML, CSS, PHP, SQL, dan Java. Lebih dari itu, pemahamanku pada <em>Data Mining</em>, pengujian statistik, dan Python memungkinkanku untuk menerjemahkan angka menjadi wawasan yang bermakna. Bagiku, desain dan teknologi adalah dua bahasa berbeda yang kugunakan untuk menceritakan satu solusi yang sama.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="theme.js"></script>
+</body>
+</html>

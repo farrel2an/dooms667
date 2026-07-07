@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artwork - Farrel Haikal</title>
+    <meta name="view-transition" content="same-origin">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+    </script>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo-dooms.png" alt="Dooms Logo" class="nav-logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="artwork.html" class="active">artwork</a></li>
+            <li><a href="contact.html">work with me</a></li>
+        </ul>
+        <!-- Tombol Dark Mode Toggle -->
+        <div class="theme-toggle" id="theme-toggle" style="cursor: pointer; display: flex; align-items: center; color: var(--nav-text);">
+            <!-- Ikon Bulan (Untuk mode terang) -->
+            <svg id="moon-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <!-- Ikon Matahari (Untuk mode gelap - disembunyikan awalnya) -->
+            <svg id="sun-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+        </div>
+    </nav>
+
+    <section class="artwork-section" style="min-height: calc(100vh - 100px);">
+        <div class="container">
+            <h2 class="section-title" style="margin-bottom: 50px;">artworks</h2>
+            
+            <!-- Bagian Featured Project: AMOLIVA -->
+            <div class="featured-artwork">
+                <div class="slider-container">
+                    <div class="slider-track" id="amoliva-track">
+                        <!-- Slide 1: Foto -->
+                        <div class="slide">
+                            <img src="artwork/amoliva/1.png" alt="AMOLIVA Product Shot 1">
+                        </div>
+                        <!-- Slide 2: Foto -->
+                        <div class="slide">
+                            <img src="artwork/amoliva/2.png" alt="AMOLIVA Product Shot 2">
+                        </div>
+                        <!-- Slide 3: Video -->
+                        <div class="slide">
+                            <video autoplay loop muted playsinline>
+                                <source src="artwork/amoliva/3.mp4" type="video/mp4">
+                                Browser Anda tidak mendukung pemutaran video.
+                            </video>
+                        </div>
+                    </div>
+                    
+                    <!-- Tombol Navigasi Slider -->
+                    <button class="slider-btn prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="slider-btn next-btn" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+                
+                <div class="featured-meta">
+                    <h3>AMOLIVA</h3>
+                    <p class="role">Art Direction / Product Branding</p>
+                    <p class="desc">
+                        Arahan visual untuk identitas brand natural hair oil. Konsep visual ini dirancang untuk menyoroti kemurnian dan efektivitas formulasi produk yang secara spesifik menggunakan <em>pumpkin seed oil</em> sebagai bio-aktivator utamanya.
+                    </p>
+                </div>
+            </div>
+            
+        <div class="featured-artwork">
+                <div class="slider-container ratio-1-1">
+                    <div class="slider-track">
+                        <div class="slide">
+                            <img src="artwork/lyrics/1.webp" alt="Lyric Illustration 1">
+                        </div>
+                        <div class="slide">
+                            <img src="artwork/lyrics/2.webp" alt="Lyric Illustration 2">
+                        </div>
+                        <div class="slide">
+                            <img src="artwork/lyrics/3.webp" alt="Lyric Illustration 3">
+                        </div>
+                    </div>
+                    <button class="slider-btn prev-btn">&#10094;</button>
+                    <button class="slider-btn next-btn">&#10095;</button>
+                </div>
+                <div class="featured-meta">
+                    <h3>Lyrical Resonance</h3>
+                    <p class="role">Digital Illustration / Typography</p>
+                    <p class="desc">
+                        Eksplorasi visual dan ilustrasi digital yang diadaptasi dari penggalan lirik lagu favorit. Proyek ini menggabungkan elemen tipografi dan permainan komposisi warna untuk menerjemahkan emosi dan ritme lagu ke dalam medium visual.
+                    </p>
+                </div>
+            </div>
+
+        <div class="featured-artwork">
+                <div class="slider-container ratio-3-4">
+                    <div class="slider-track">
+                        <div class="slide">
+                            <img src="artwork/posters/1.png" alt="Fan-made Movie Poster 1">
+                        </div>
+                        <div class="slide">
+                            <img src="artwork/posters/2.png" alt="Fan-made Movie Poster 2">
+                        </div>
+                        <<div class="slide">
+                            <video autoplay loop muted playsinline>
+                                <source src="artwork/posters/3.mp4" type="video/mp4">
+                                Browser Anda tidak mendukung pemutaran video.
+                            </video>
+                        </div>
+                    </div>
+                    <button class="slider-btn prev-btn">&#10094;</button>
+                    <button class="slider-btn next-btn">&#10095;</button>
+                </div>
+                <div class="featured-meta">
+                    <h3>Cinematic Tributes</h3>
+                    <p class="role">Art Direction / Poster Design</p>
+                    <p class="desc">
+                        Koleksi desain poster alternatif (fan-made) yang mengeksplorasi pendekatan visual baru untuk beberapa judul film. Proyek ini berfokus pada manipulasi gambar, komposisi tipografi, dan penyesuaian atmosfer warna untuk merangkum esensi cerita ke dalam sebuah kanvas vertikal.
+                    </p>
+                </div>
+            </div>
+
+        <div class="featured-artwork">
+                <div class="slider-container ratio-16-9">
+                    <div class="slider-track">
+                        <div class="slide">
+                            <img src="artwork/bakery/1.png" alt="Bakery App UI 1">
+                        </div>
+                        <div class="slide">
+                            <img src="artwork/bakery/2.png" alt="Bakery App UI 2">
+                        </div>
+                        <div class="slide">
+                            <video autoplay loop muted playsinline>
+                                <source src="artwork/bakery/3.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <button class="slider-btn prev-btn">&#10094;</button>
+                    <button class="slider-btn next-btn">&#10095;</button>
+                </div>
+                <div class="featured-meta">
+                    <h3>House of Bread</h3>
+                    <p class="role">Software Development / Java GUI</p>
+                    <p class="desc">
+                        Pengembangan aplikasi desktop berbasis Java NetBeans untuk manajemen kasir toko roti. Antarmuka visual dan alur struktur datanya dirancang ramping untuk memprioritaskan kelancaran transaksi langsung dan efisiensi pengisian form penjualan harian, secara sadar memangkas kompleksitas manajemen supplier agar performa sistem tetap ringan dan tepat sasaran.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="slider.js"></script>
+    <script src="theme.js"></script>
+</body>
+</html>

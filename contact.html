@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work With Me - Farrel Haikal</title>
+    <meta name="view-transition" content="same-origin">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+    </script>
+    
+    <!-- Navigasi Utama -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo-dooms.png" alt="Dooms Logo" class="nav-logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="artwork.html">artwork</a></li>
+            <li><a href="contact.html" class="active">work with me</a></li>
+        </ul>
+        <!-- Tombol Dark Mode Toggle -->
+        <div class="theme-toggle" id="theme-toggle" style="cursor: pointer; display: flex; align-items: center; color: var(--nav-text);">
+            <!-- Ikon Bulan (Untuk mode terang) -->
+            <svg id="moon-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <!-- Ikon Matahari (Untuk mode gelap - disembunyikan awalnya) -->
+            <svg id="sun-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+        </div>
+    </nav>
+
+    <!-- Bagian Work With Me -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <h2 class="section-title">work with me</h2>
+            <p class="contact-desc">
+                Tertarik untuk berkolaborasi, membahas ide proyek baru, atau sekadar ingin menyapa? Jangan ragu untuk menghubungiku melalui platform di bawah ini.
+            </p>
+            
+            <div class="contact-links">
+                <!-- Tautan Email -->
+                <a href="mailto:farrelpraikal@gmail.com" class="contact-item">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">farrelpraikal@gmail.com</span>
+                </a>
+                
+                <!-- Tautan LinkedIn -->
+                <a href="https://www.linkedin.com/in/farrel-haikal-5866712b6?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="contact-item">
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">Farrel Haikal Prasetya</span>
+                </a>
+                
+                <!-- Tautan Instagram -->
+                <a href="https://instagram.com/dooms667" target="_blank" class="contact-item">
+                    <span class="contact-label">Instagram</span>
+                    <span class="contact-value">@dooms667</span>
+                </a>
+                
+                <!-- Tautan GitHub / Behance (Opsional) -->
+                <a href="https://github.com/farrel2an" target="_blank" class="contact-item">
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">github.com/farrel2an</span>
+                </a>
+            </div>
+            
+            <div class="details" style="margin-top: 60px;">
+                <p class="copyright">Some Rights Reserved, 2026.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="theme.js"></script>
+</body>
+</html>
