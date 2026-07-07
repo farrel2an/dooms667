@@ -55,7 +55,7 @@ themeToggle.addEventListener('click', (e) => {
                 ],
             },
             {
-                duration: 500, // Kecepatan animasi
+                duration: 350, // Kecepatan animasi
                 easing: 'ease-in-out',
                 // KUNCINYA DI SINI: Kita selalu menganimasikan tampilan yang BARU
                 pseudoElement: '::view-transition-new(root)',
